@@ -18,6 +18,7 @@ This is a fully functional e-commerce frontend application built using **ReactJS
 ![image](https://github.com/user-attachments/assets/331b38e0-8f49-4e67-a5cb-8e41105b7d86)
 
 ![image](https://github.com/user-attachments/assets/b6604f62-7b9d-42c7-ad15-98e4ade99d02)
+http://localhost:5173/
 
 
 
