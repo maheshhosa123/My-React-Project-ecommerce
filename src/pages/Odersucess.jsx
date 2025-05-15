@@ -16,30 +16,37 @@ export default function Ordersuccess() {
             alignItems: "center",
             height: "100vh",
             textAlign: "center",
-            backgroundColor: "#f5f5f5",
+            backgroundColor: "#121212",  // Dark background for neon colors to pop
             padding: "20px",
             fontFamily: "'Segoe UI', sans-serif"
         },
         title: {
-            fontSize: "2.5rem",
-            color: "#4CAF50",
-            marginBottom: "20px"
+            fontSize: "3rem",
+            color: "#39FF14", // Neon green color
+            marginBottom: "20px",
+            textShadow: "0 0 10px #39FF14, 0 0 20px #39FF14, 0 0 30px #39FF14", // Neon glow effect
         },
         message: {
-            fontSize: "1.2rem",
-            color: "#333",
-            marginBottom: "30px"
+            fontSize: "1.5rem",
+            color: "#fff", // White text for readability
+            marginBottom: "30px",
+            textShadow: "0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff2a68", // Soft white glow with a pink hint
         },
         button: {
-            padding: "12px 25px",
-            fontSize: "1rem",
-            backgroundColor: "#4CAF50",
+            padding: "14px 28px",
+            fontSize: "1.1rem",
+            backgroundColor: "#ff2a68", // Neon pink color
             color: "#fff",
             border: "none",
-            borderRadius: "6px",
+            borderRadius: "8px",
             cursor: "pointer",
-            transition: "background 0.3s ease",
-            textDecoration: "none"
+            transition: "background-color 0.3s ease, transform 0.2s ease",
+            textDecoration: "none",
+            boxShadow: "0 0 10px #ff2a68, 0 0 20px #ff2a68, 0 0 30px #ff2a68", // Neon glow for the button
+        },
+        buttonHover: {
+            backgroundColor: "#e11d55", // Slightly darker neon pink on hover
+            transform: "scale(1.05)", // Button grows a bit on hover
         }
     };
 
@@ -47,7 +54,16 @@ export default function Ordersuccess() {
         <div style={styles.container}>
             <h1 style={styles.title}>🎉 Order Placed Successfully!</h1>
             <p style={styles.message}>Thank you for shopping with us.</p>
-            <a href="/" style={styles.button}>Go to Home</a>
+            <a
+                href="/"
+                style={styles.button}
+                onMouseOver={(e) => e.currentTarget.style.backgroundColor = styles.buttonHover.backgroundColor}
+                onMouseOut={(e) => e.currentTarget.style.backgroundColor = styles.button.backgroundColor}
+                onMouseDown={(e) => e.currentTarget.style.transform = "scale(1.02)"}
+                onMouseUp={(e) => e.currentTarget.style.transform = "scale(1)"}
+            >
+                Go to Home
+            </a>
         </div>
     );
 }

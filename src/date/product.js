@@ -1,8 +1,14 @@
-import product1 from "../assets/images/images3.png";
-import product2 from "../assets/images/im1.png";
-import product3 from "../assets/images/im1.png";
-import product4 from "../assets/images/image4.png";
-import product5 from "../assets/images/img5.png";
+import product1 from "../assets/images/velcacity.png";
+import product2 from "../assets/images/urban tee.png";
+import product3 from "../assets/images/headphone.png";
+import product4 from "../assets/images/jacket1.png";
+import product5 from "../assets/images/csk.png";
+import product6 from "../assets/images/black jacket.png";
+import product7 from "../assets/images/BLAZE.png";
+import product8 from "../assets/images/rcb.png";
+import product9 from "../assets/images/ktm.png";
+import product11 from "../assets/images/I phone.png";
+import product12 from "../assets/images/air.png";
 
 export const products = [
   {
@@ -39,27 +45,27 @@ export const products = [
   },
   {
     id: 5,
-    name: "Shadow Cap",
+    name: "CSK Cap",
     category: "Accessories",
-    price: 499,
+    price: 500,
     description: "Stylish black cap with adjustable fit and breathable fabric.",
     image: product5,
   },
   {
     id: 6,
-    name: "Olive Ridge Cap",
+    name: "RCB Cap",
     category: "Accessories",
-    price: 499,
+    price: 100,
     description: "Durable olive-green hat perfect for outdoor activities.",
-    image: product5,
+    image: product8,
   },
   {
     id: 7,
-    name: "Arctic Shield Jacket",
-    category: "Clothing",
+    name: "KTM watch",
+    category: "ElElectronics",
     price: 1299,
-    description: "High-quality insulated jacket for chilly days.",
-    image: product4,
+    description: "KTM watcks for riders.",
+    image: product9,
   },
   {
     id: 8,
@@ -75,7 +81,7 @@ export const products = [
     category: "Footwear",
     price: 799,
     description: "Lightweight shoes built for casual comfort and walking.",
-    image: product2,
+    image: product6,
   },
   {
     id: 10,
@@ -83,6 +89,22 @@ export const products = [
     category: "Footwear",
     price: 2499,
     description: "Bold red sneakers that combine style and performance.",
-    image: product1,
+    image: product7,
   },
-];
+{
+    id: 11,
+    name: "I phone",
+    category: "Electronics",
+    price: 100000,
+    description: "use for any one.",
+    image: product11,
+  },
+  {
+    id: 12,
+    name: "airpods",
+    category: "Electronics",
+    price: 1500,
+    description: "use for any one.",
+    image: product12,
+  },
+  ];
